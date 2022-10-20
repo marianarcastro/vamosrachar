@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Vamos Rachar</string>
+    <string name="quantas_pessoas_v_o_rachar">Quantas pessoas vão rachar?</string>
+    <string name="vamos_rachar">Vamos Rachar?</string>
+    <string name="valor_total_da_conta">Valor Total da Conta:</string>
+    <string name="cada_um_paga">Cada um paga:</string>
+    <string name="fala">Fala</string>
+    <string name="dark_mode">Modo Escuro</string>
 </resources>

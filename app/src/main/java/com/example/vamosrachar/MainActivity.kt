@@ -7,8 +7,10 @@ import android.text.TextWatcher
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import java.util.*
 
 
@@ -52,6 +54,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+
+        val btn = findViewById<Switch>(R.id.switch1)
+        btn.setOnCheckedChangeListener { _, isChecked ->
+            if (btn.isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
     }
 
     private fun calculateAccount(valorTotal: String, qntPessoas: String):Float {
